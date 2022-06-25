@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-
+import styles from './UserList.module.css'
 const UserList = () => {
   const [users, setUsers] = useState(null);
   const [filteredUsers, setFilteredUsers] = useState(null);
@@ -36,18 +36,18 @@ const UserList = () => {
   };
 
   return (
-    <div>
-      <input type="text" value={inputValue} onChange={changeHandler} />
-      <table>
-        <thead>
+    <div  className={styles.container}>
+      <input className={styles.input} placeholder="Search for..." type="text" value={inputValue} onChange={changeHandler} />
+      <table className={styles.table}>
+        <thead className={styles.thead}>
           <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>email</th>
-            <th>role</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Role</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className={styles.tbody}>
           {filteredUsers.map((user) => {
             const { id, name, email, role } = user;
             return (
