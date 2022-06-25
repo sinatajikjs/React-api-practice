@@ -1,0 +1,47 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": 
+   [ 
+  {
+    "id": 1,
+    "name": "saheb",
+    "email": "saheb@test.com",
+    "role": "Coach"
+  },
+  {
+    "id": 2,
+    "name": "vahid",
+    "email": "vahid@test.com",
+    "role": "student"
+  },
+  {
+    "id": 3,
+    "name": "ali",
+    "email": "ali@test.com",
+    "role": "student"
+  },
+  {
+    "id": 4,
+    "name": "user",
+    "email": "user@test.com",
+    "role": "student"
+  }]
+
+  
+}
